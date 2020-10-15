@@ -107,3 +107,41 @@ header, .navbar {
 .carousel-indicators .active {
     background-color: aqua;
 }
+
+/* Área "Sobre" */
+.about {
+    background-color: darkgray;
+}
+
+.section-title {
+    color: black;
+    background-color: darkorange;
+    margin: 0 0 65px 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+.section-title::after {
+    content: "";
+    border-top: 2px solid #333;
+    width: 50%;
+    position: absolute;
+    top: 60px;
+    left: 26.5%;
+}
+
+/* Serviços */
+
+.service-box {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.service-box i, .service-box h4 {
+    transition .5s;
+}
+
+.service-box:hover > i, .service-box:hover > h4{
+    color: darkorange;
+    font-size: 36px;
+}
