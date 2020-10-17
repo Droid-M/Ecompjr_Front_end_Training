@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 /* Geral */
 body {
     font-family: 'Arial' 'sans-serif';
@@ -18,7 +20,7 @@ p, li {
 
 /* Barra de navegação */
 header, .navbar {
-    background-color: #353d41;
+    background-color: black;
 }
 
 #nav-container {
@@ -40,11 +42,11 @@ header, .navbar {
 }
 
 #navbar-links a {
-    color: #FFF;
+    color: aqua;
     font-size: large;
 }
 #navbar-links a:hover {
-    color: royalblue;
+    color: goldenrod;
     font-size: xx-large;
 }
 
@@ -58,8 +60,16 @@ header, .navbar {
     padding: 0;
 }
 
-#centerSlide .carousel-inner, #centerSlide .carousel-item {
+#centerSlide {
+    margin-bottom: 20px;
+}
+
+#centerSlide .carousel-inner, #centerSlide .carousel-item{
     height: 90vh;
+}
+
+#centerSlide .carousel-item .color-to-black {
+    color: black;
 }
 
 #centerSlide .carousel-caption {
@@ -99,7 +109,7 @@ header, .navbar {
 
 .main-btn:hover {
     text-decoration: none;
-    color: #FFF;
+    color: goldenrod;
     background-color: transparent;
     border-color: turquoise;
 }
@@ -113,17 +123,27 @@ header, .navbar {
     background-color: darkgray;
 }
 
+.section-title::before {
+    content: "";
+    border-top: 7px solid #333;
+    width: 50%;
+    position: absolute;
+    bottom: 60px;
+    left: 26.5%;
+}
+
 .section-title {
     color: black;
     background-color: darkorange;
     margin: 0 0 65px 0;
     font-size: 40px;
     text-align: center;
+    padding-bottom: 10px;
 }
 
 .section-title::after {
     content: "";
-    border-top: 2px solid #333;
+    border-top: 7px solid #333;
     width: 50%;
     position: absolute;
     top: 60px;
@@ -138,10 +158,149 @@ header, .navbar {
 }
 
 .service-box i, .service-box h4 {
-    transition .5s;
+    transition: .5s;
 }
 
 .service-box:hover > i, .service-box:hover > h4{
     color: darkorange;
     font-size: 36px;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.card-img-top {
+    width:900px;
+    height:250px;
+}
+
+/* Team */
+#about-team {
+    text-align: center;
+    display: block;
+    height: auto;
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    
+    border-color: black;
+}
+
+/* Portfolio */
+
+#filter-btn-painel {
+    margin-bottom: 40px;
+}
+
+#portfolio .col-md-4 {
+    color: white;
+    font-size: large;
+}
+
+#portfolio .col-md-4:hover {
+    font-size: xx-large;
+    color: goldenrod;
+}
+
+#portfolio .container {
+    margin-bottom: 40px;
+}
+
+.partner-img {
+    margin: 10px 10px;
+}
+
+.partner-img:hover {
+    width: 120px;
+}
+
+.about-title {
+    text-align: center;
+}
+
+.col-md-6 {
+    text-align: center;
+}
+ 
+#team .row .col-12 {
+    margin-bottom: 40px;
+}
+@media(max-width: 778px) {
+    .container {
+        padding: 20px 20px;
+    }
+
+    #centerSlide .carousel-inner, #centerSlide .carousel-item {
+        height: auto;
+    }
+
+    #centerSlide .carousel-caption h2 {
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+
+    #about img {
+        margin-top: 100px;
+    }
+
+    .main-btn {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 490px) {
+    #centerSlide {
+        margin-top: 80px;
+        margin-bottom: 50px;
+    }
+
+    #centerSlide .carousel-caption {
+        top:5%
+    }
+
+    #centerSlide .carousel-caption h2 {
+        font-size: 28px;
+        margin-top: 40px;
+    }
+    #centerSlide .carousel-caption p {
+        display: none;
+    }
+
+    #centerSlide .carousel-caption .main-btn {
+        font-size: 80%;   
+    }
+
+    #about img {
+        margin-top: 0px;
+    }
+
+    #portfolio .col-md-4 {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+}
+
+/* Parallax */
+#about-img-pllx {
+    background-image: url("../img/backgrounds/pexels-photo-3184431.jpg");
+    height: 500px;
+    width: 333px;
+    background-attachment: fixed;
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+
+#portfolio {
+    background-image: url("../img/backgrounds/pexels-fauxels-3184454.jpg");
+    height: 100%;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: 0;
+    background-repeat: no-repeat;
+    background-size: auto;
 }
