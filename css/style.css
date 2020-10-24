@@ -171,8 +171,8 @@ header, .navbar {
 }
 
 .card-img-top {
-    width:900px;
-    height:250px;
+    width:255px;
+    height:350px;
 }
 
 /* Team */
@@ -209,11 +209,11 @@ header, .navbar {
 }
 
 .partner-img {
-    margin: 10px 10px;
+    margin: 50px 50px;
 }
 
 .partner-img:hover {
-    width: 120px;
+    height: 180px;
 }
 
 .about-title {
